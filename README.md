@@ -23,6 +23,7 @@ Scripts to Translate Bank statements to CSVs suitable for Gnucash
 		ColumnTypes=None;Date;Description;Notes;Withdrawal;Deposit;None;Transfer Account;```
 
 
+
 		[Import csv,transaction - Canara-Savings-Import]
 		Name=Canara-Savings-Import
 		SkipStartLines=1
