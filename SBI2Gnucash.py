@@ -43,7 +43,7 @@ print("\nProcessing for Account Number:\n"+Account_Number+"\n")
 output_filename= os.path.splitext(input_filename)[0] + Account_Number + '.gc.csv'
 
 
-sbi_stmt = pd.read_csv(input_filename, sep='\t', skiprows=19, skipfooter=2, engine='python')
+sbi_stmt = pd.read_csv(input_filename, sep='\t', skiprows=20, skipfooter=2, engine='python')
 sbi_stmt['Txn Date'] = pd.to_datetime(sbi_stmt['Txn Date'], format='%d %b %Y')
 sbi_stmt['Value Date'] = pd.to_datetime(sbi_stmt['Value Date'], format='%d %b %Y')
 sbi_stmt.columns.tolist()
